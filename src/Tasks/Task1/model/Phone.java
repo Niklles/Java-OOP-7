@@ -1,4 +1,4 @@
-package src.Tasks.Task1.model;
+package src.tasks.task1.model;
 
 public class Phone implements java.io.Serializable {
     private String number;

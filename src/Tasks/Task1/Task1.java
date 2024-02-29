@@ -1,8 +1,8 @@
-package src.Tasks.Task1;
+package src.tasks.task1;
 
-import src.Tasks.Task1.model.Phone;
+import src.tasks.task1.model.Phone;
 
-public class Task1 {
+public class task1 {
 
     public static void Execute() {
         Phone device1 = new Phone("+79164548455", "Xiaomi", 2.69);

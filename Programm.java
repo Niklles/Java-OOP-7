@@ -1,18 +1,18 @@
-import src.Tasks.Task1.Task1;
-
+import src.tasks.task1.task1;
+import src.tasks.task2.task2;
 
 public class Programm {
 
     public static void main (String[] args){
-        // Task1.Execute();
-        // Task2.Execute();
-        // Task3.Execute();
-        // Task4.Execute();
-        // Task5.Execute();
-        // Task6.Execute();
-        // Task7.Execute();
-        // Task8.Execute();
-        // Task9.Execute();
-        // Task10.Execute();
+        // task1.Execute();
+        task2.Execute();
+        // task3.Execute();
+        // task4.Execute();
+        // task5.Execute();
+        // task6.Execute();
+        // task7.Execute();
+        // task8.Execute();
+        // task9.Execute();
+        // task10.Execute();
     }
 }
