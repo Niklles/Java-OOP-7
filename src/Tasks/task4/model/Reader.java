@@ -31,6 +31,12 @@ public class Reader {
         return phoneNumber;
     }
 
+    private Book[] books;
+
+    public Book[] getBooks() {
+        return books;
+    }
+
     public Reader(String fullName, String serviceNumber, String faculty, String birthDay, String phoneNumber) {
         this.fullName = fullName;
         this.serviceNumber = serviceNumber;
@@ -51,20 +57,28 @@ public class Reader {
         System.out.printf("%s: взял(а) %d книги", fullName, countBook);
     }
 
-    public void takeBook (String... bookNames){
+    public void takeBook(String... bookNames) {
         String names = new String();
         for (String bookName : bookNames) {
             names += bookName + ", ";
         }
-        System.out.printf("%s взял книги: %s", fullName, names.substring(0, names.length() - 2));
+        System.out.printf("%s взял книги: %s\n", fullName, names.substring(0, names.length() - 3));
     }
 
     public void takeBook(Book... titleBooks) {
         String title = new String();
-        for (Book titleBook : titleBooks){
+        for (Book titleBook : titleBooks) {
             title += titleBook.getNameBook() + " " + titleBook.getAuthor() + ", ";
-            System.out.printf("%s взял книги: %s", fullName, title.substring(0, title.length() - 2));
-            }
-            
+            System.out.printf("%s взял книги: %s\n", fullName, title.substring(0, title.length() - 3));
         }
+        books = titleBooks;
+    }
+
+    public void displayBooks() {
+        String book = new String();
+        for (Book a : books) {
+            book = a.getNameBook() + " " + a.getAuthor() + ", ";
+            System.out.printf("%s положил дома книги: %s\n", fullName, book.substring(0, book.length() - 3));
+        }
+    }
 }

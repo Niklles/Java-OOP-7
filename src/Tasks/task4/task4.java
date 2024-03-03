@@ -13,9 +13,10 @@ public class task4 {
         Book book3 = new Book("Словарь", "Kate D.D.");
         Book [] books = new Book[] {book1, book2, book3};
 
-        
+
         human1.takeBook(book1, book2, book3);
-        
+        human1.displayBooks();
+
 
     }
 }
