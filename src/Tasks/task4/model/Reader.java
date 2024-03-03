@@ -75,12 +75,10 @@ public class Reader {
     }
 
     public void displayBooks() {
-        String quantityBook = new String();;
         String book = new String();
         for (Book a : books) {
-            book = a.getNameBook() + " " + a.getAuthor() + ", ";
-            quantityBook += book;
+            book += a.getNameBook() + " " + a.getAuthor() + ", ";
         }
-        System.out.printf("%s положил дома книги: %s", fullName, quantityBook.substring(0, quantityBook.length() - 3));
+        System.out.printf("%s положил дома книги: %s", fullName, book.substring(0, book.length() - 2));
     }
 }
